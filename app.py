@@ -15,7 +15,7 @@ weight = st.number_input('Weight (kg)', min_value=0.0)
 
 gender_num = 0 if gender == 'Female' else 1
 # Preprocess the user input
-input_data = [[gender, height, weight]]
+input_data = [[gender_num, height, weight]]
 input_scaled = scaler.transform(input_data)
 
 # Make a prediction
