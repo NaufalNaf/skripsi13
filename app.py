@@ -13,6 +13,7 @@ gender = st.radio('Gender', ['Male', 'Female'])
 height = st.number_input('Height (cm)', min_value=0.0)
 weight = st.number_input('Weight (kg)', min_value=0.0)
 
+gender_num = 0 if gender == 'Female' else 1
 # Preprocess the user input
 input_data = [[gender, height, weight]]
 input_scaled = scaler.transform(input_data)
